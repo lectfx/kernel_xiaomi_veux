@@ -98,6 +98,8 @@ ifneq ($(findstring s,$(filter-out --%,$(MAKEFLAGS))),)
   quiet=silent_
 endif
 
+KBUILD_OUTPUT := out
+
 export quiet Q KBUILD_VERBOSE
 
 # Kbuild will save output files in the current working directory.
